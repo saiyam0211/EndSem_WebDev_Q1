@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduport - Learning Portal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header sticky-top bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <div class="navbar-left d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="assets/logo.svg" alt="Eduport Logo" class="me-2" />
+              </a>
+            </div>
+  
+            <div class="d-flex align-items-center">
+              <button
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <div class="hamburger-menu">
+                  <span class="line line1"></span>
+                  <span class="line line2"></span>
+                  <span class="line line3"></span>
+                </div>
+              </button>
+              <div class="nav-item d-lg-none ms-2">
+                <a href="#" class="nav-link p-0">
+                  <img src="assets/user.jpg" alt="User" class="rounded-circle" width="32" height="32"/>
+                </a>
+              </div>
+            </div>
+  
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <div class="mobile-category-btn d-lg-none mb-3">
+                <a href="#" class="nav-link bg-light rounded-3 d-flex align-items-center">
+                  <i class="fas fa-th-large me-2"></i>
+                  <span>Category</span>
+                </a>
+              </div>
+  
+              <ul class="navbar-nav mobile-nav mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Demos
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Pages
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Accounts
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    Megamenu
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="fas fa-ellipsis-h mt-1"></i>
+                  </a>
+                </li>
+              </ul>
+  
+              <div class="mobile-search d-lg-none mt-3">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" />
+                  <button class="btn" type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="navbar-right d-none d-lg-flex align-items-center">
+              <a href="#" class="nav-link bg-light rounded-pill me-3">
+                <i class="fas fa-th-large me-2"></i>Category
+              </a>
+              <div class="nav-item">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search" />
+                  <button class="btn" type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="nav-item">
+                <a href="#" class="nav-link p-0">
+                  <img src="assets/user.jpg" alt="User" class="rounded-circle" width="32" height="32"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <section class="stats-section py-4">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="card stat-card h-100 border-0"
+                style="background-color: #fff9e7"
+              >
+                <div class="card-body d-flex align-items-center">
+                  <div class="display-6 text-warning me-3">
+                    <i class="fas fa-laptop"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-0 fw-bold">10K</h5>
+                    <p class="card-text small mb-0">Online Courses</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="card stat-card h-100 border-0"
+                style="background-color: #e7efff"
+              >
+                <div class="card-body d-flex align-items-center">
+                  <div class="display-6 text-primary me-3">
+                    <i class="fas fa-user-tie"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-0 fw-bold">200+</h5>
+                    <p class="card-text small mb-0">Expert Tutors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="card stat-card h-100 border-0"
+                style="background-color: #f3e7ff"
+              >
+                <div class="card-body d-flex align-items-center">
+                  <div class="display-6 text-purple me-3">
+                    <i class="fas fa-user-graduate"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-0 fw-bold">60K+</h5>
+                    <p class="card-text small mb-0">Online Students</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="card stat-card h-100 border-0"
+                style="background-color: #dff9f9"
+              >
+                <div class="card-body d-flex align-items-center">
+                  <div class="display-6 text-info me-3">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-0 fw-bold">6K+</h5>
+                    <p class="card-text small mb-0">Certified Courses</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses-section py-4">
+        <div class="container">
+          <h2 class="section-title fw-bold mb-2">Most Popular Courses</h2>
+          <p class="mb-4 text-muted">
+            Choose from hundreds of courses from specialist organizations
+          </p>
+
+          <ul class="nav nav-pills mb-4" id="courseTab" role="tablist">
+            <li class="nav-item me-2" role="presentation">
+              <button
+                class="nav-link active btn btn-primary text-white"
+                id="web-design-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#web-design"
+                type="button"
+                role="tab"
+                aria-selected="true"
+              >
+                Web Design
+              </button>
+            </li>
+            <li class="nav-item me-2" role="presentation">
+              <button
+                class="nav-link btn btn-outline-primary"
+                id="development-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#development"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                Development
+              </button>
+            </li>
+            <li class="nav-item me-2" role="presentation">
+              <button
+                class="nav-link btn btn-outline-primary"
+                id="graphic-design-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#graphic-design"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                Graphic Design
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content" id="courseTabContent">
+            <div class="tab-pane fade show active" id="web-design" role="tabpanel">
+              <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course1.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-purple text-white">All Level</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Sketch from A to Z: for app designer</h5>
+                      <p class="card-text small text-muted">Proposal is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star-half-alt small"></i>
+                          <span class="text-dark ms-1">4.5/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">12h 56m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">15 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course2.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-success text-white">Beginner</span>
+                      <div class="favorite-icon">
+                        <i class="fas fa-heart text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Graphic Design Masterclass</h5>
+                      <p class="card-text small text-muted">Rooms oh fully taken by worse do. Points afraid but may end law.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="far fa-star small"></i>
+                          <span class="text-dark ms-1">4.0/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">4h 50m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">65 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course3.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-success text-white">Beginner</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Create a Design System in Figma</h5>
+                      <p class="card-text small text-muted">Rooms oh fully taken by worse do. Points afraid but may end law.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star-half-alt small"></i>
+                          <span class="text-dark ms-1">4.5/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">5h 56m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">32 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course4.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-danger text-white">Advanced</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Deep Learning with React Native</h5>
+                      <p class="card-text small text-muted">Finished building you. Offending extended activity according.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="far fa-star small"></i>
+                          <span class="text-dark ms-1">4.0/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">18h 56m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">99 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="development" role="tabpanel">
+              <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course5.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-purple text-white">All Level</span>
+                      <div class="favorite-icon">
+                        <i class="fas fa-heart text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Build Responsive Websites with HTML</h5>
+                      <p class="card-text small text-muted">For intermediate to advanced coders who want to improve their skills.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <span class="text-dark ms-1">4.8/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">12h 45m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">96 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course6.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-success text-white">Beginner</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Build Websites with CSS</h5>
+                      <p class="card-text small text-muted">For advanced coders who want to improve their styling skills.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star-half-alt small"></i>
+                          <span class="text-dark ms-1">4.5/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">28h 15m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">72 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course7.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-purple text-white">All Level</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Learn InVision</h5>
+                      <p class="card-text small text-muted">Arrived off she elderly beloved him course regard to up.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="far fa-star small"></i>
+                          <span class="text-dark ms-1">3.8/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">6h 56m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">82 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course8.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-danger text-white">Advanced</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">JavaScript: Full Understanding</h5>
+                      <p class="card-text small text-muted">For advanced coders who want to improve their JavaScript skills.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star-half-alt small"></i>
+                          <span class="text-dark ms-1">4.8/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">28h 05m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">89 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="graphic-design" role="tabpanel">
+              <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course1.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-purple text-white">All Level</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Adobe Photoshop Masterclass</h5>
+                      <p class="card-text small text-muted">Learn professional photo editing and manipulation techniques.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <span class="text-dark ms-1">5.0/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">15h 30m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">45 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course2.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-success text-white">Beginner</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Illustrator for Beginners</h5>
+                      <p class="card-text small text-muted">Master the basics of vector graphics and illustration.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star-half-alt small"></i>
+                          <span class="text-dark ms-1">4.5/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">8h 45m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">24 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course3.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-danger text-white">Advanced</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">Motion Graphics in After Effects</h5>
+                      <p class="card-text small text-muted">Create stunning animations and motion graphics.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="far fa-star small"></i>
+                          <span class="text-dark ms-1">4.0/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">20h 15m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">60 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                  <div class="card course-card h-100 border-0 shadow-sm">
+                    <div class="position-relative">
+                      <img src="assets/course4.jpg" class="card-img-top course-image" alt="Course" />
+                      <span class="course-tag badge bg-purple text-white">All Level</span>
+                      <div class="favorite-icon">
+                        <i class="far fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="card-body pb-0">
+                      <h5 class="card-title">UI/UX Design Fundamentals</h5>
+                      <p class="card-text small text-muted">Learn the principles of user interface and experience design.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                      <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div class="text-warning">
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star small"></i>
+                          <i class="fas fa-star-half-alt small"></i>
+                          <span class="text-dark ms-1">4.5/5</span>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-clock text-danger me-1"></i>
+                          <span class="small">12h 30m</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <i class="far fa-list-alt text-orange me-1"></i>
+                          <span class="small">36 lectures</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/logo.svg" alt="Eduport" height="24" class="me-2">
+            </div>
+            <p class="text-muted small mb-4">
+              Eduport education theme, built specifically for the education centers which is dedicated to teaching and involve learners.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-light btn-sm rounded-circle">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="btn btn-light btn-sm rounded-circle">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="btn btn-light btn-sm rounded-circle">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-light btn-sm rounded-circle">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="mb-3">Company</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="#" class="text-muted text-decoration-none">About us</a></li>
+              <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Contact us</a></li>
+              <li class="mb-2"><a href="#" class="text-muted text-decoration-none">News and Blogs</a></li>
+              <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Library</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="mb-3">Community</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Documentation</a></li>
+              <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Faq</a></li>
+              <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Forum</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Sitemap</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h5 class="mb-3">Teaching</h5>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Become a teacher</a></li>
+              <li class="mb-2"><a href="#" class="text-muted text-decoration-none">How to guide</a></li>
+              <li><a href="#" class="text-muted text-decoration-none">Terms & Conditions</a></li>
+            </ul>
+
+            <h5 class="mb-3">Contact</h5>
+            <div class="text-muted small">
+              <p class="mb-2">
+                Toll free: <span class="fw-medium">+1234 568 963</span>
+                <br>
+                <span class="text-secondary">(9:AM to 8:PM IST)</span>
+              </p>
+              <p class="mb-0">
+                Email: <span class="fw-medium">example@gmail.com</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5 pt-4 border-top">
+          <div class="col-md-6">
+            <p class="text-muted small mb-0">Copyrights ©2024 Eduport. Build by Webestica</p>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-md-end align-items-center">
+              <div class="dropdown me-3">
+                <button class="btn btn-none" type="button" data-bs-toggle="dropdown">
+                  <i class="fas fa-globe me-2"></i>Language
+                </button>
+              </div>
+              <a href="#" class="text-muted text-decoration-none me-3">Terms of use</a>
+              <a href="#" class="text-muted text-decoration-none">Privacy policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
